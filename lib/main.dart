@@ -31,7 +31,14 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Text('Merhaba'),
+      body: Row(
+        children: [
+          Text('Merhaba'),
+          Container(width: 100,height: 100,color: Colors.red,),
+          Container(width: 50,height: 50,color: Colors.blue,),
+          Container(width: 25,height: 25, color: Colors.green,),
+        ],
+      ),
     );
   }
 }
