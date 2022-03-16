@@ -31,12 +31,12 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Row(
+      body: Column(
         children: [
-          Text('Merhaba'),
+          Text('merhaba'),
           Container(width: 100,height: 100,color: Colors.red,),
           Container(width: 50,height: 50,color: Colors.blue,),
-          Container(width: 25,height: 25, color: Colors.green,),
+          Container(width: 150,height: 150, color: Colors.green,),
         ],
       ),
     );
