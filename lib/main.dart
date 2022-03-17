@@ -33,6 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
           margin: const EdgeInsets.all(10),
@@ -47,7 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
           borderRadius: const BorderRadius.all(Radius.circular(20)),
           ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
                 
