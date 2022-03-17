@@ -31,22 +31,40 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Stack(
+      body: Row(
         children: [
-          Container(width: 400, height: 400,color: Colors.red,),
-          Row(
+          Container(
+          margin: const EdgeInsets.all(10),
+          width: 200,
+          height: 200,
+          decoration: BoxDecoration(
+          color: Colors.red,
+          border: Border.all(
+            color: Colors.blue,
+            width: 5,
+          ),
+          borderRadius: const BorderRadius.all(Radius.circular(20)),
+          ),
+          child: Column(
             children: [
-              Container(width: 100,height: 100,color: Colors.blue,),
-              Container(width: 100,height: 100,color: Colors.yellow,),
-              Column(
-                children: [
-                  Container(width: 100,height: 100,color: Colors.amberAccent,),
-                  Container(width: 100,height: 100,color: Colors.cyan,),
-                ],
+              Container(
+                margin: const EdgeInsets.all(10),
+                width: 50,
+                height: 50,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  border: Border.all(
+                    color: Colors.white,
+                    width: 3,
+                  )
+                ),
               ),
+              Container(width: 50,height: 50,color: Colors.orange,),
             ],
           ),
-
+          
+          ),
+          Container(width: 100,height: 100,color: Colors.blue,),
         ],
       ),
     );
