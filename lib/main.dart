@@ -33,10 +33,20 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Stack(
         children: [
-          Container(width: 200,height: 200,color: Colors.red,),
-          Container(width: 100,height: 100,color: Colors.blue,),
-          Container(width: 50,height: 50, color: Colors.green,),
-          Text('Merhaba'),
+          Container(width: 400, height: 400,color: Colors.red,),
+          Row(
+            children: [
+              Container(width: 100,height: 100,color: Colors.blue,),
+              Container(width: 100,height: 100,color: Colors.yellow,),
+              Column(
+                children: [
+                  Container(width: 100,height: 100,color: Colors.amberAccent,),
+                  Container(width: 100,height: 100,color: Colors.cyan,),
+                ],
+              ),
+            ],
+          ),
+
         ],
       ),
     );
