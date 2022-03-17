@@ -32,6 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Container(
           margin: const EdgeInsets.all(10),
@@ -46,9 +47,11 @@ class _MyHomePageState extends State<MyHomePage> {
           borderRadius: const BorderRadius.all(Radius.circular(20)),
           ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                margin: const EdgeInsets.all(10),
+                
+                margin: const EdgeInsets.only(left: 0,top: 3,right: 2,bottom: 2),
                 width: 50,
                 height: 50,
                 decoration: BoxDecoration(
@@ -59,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                 ),
               ),
-              Container(width: 50,height: 50,color: Colors.orange,),
+              Container(width: 50,height: 50,color: Colors.orange, margin: const EdgeInsets.all(5),),
             ],
           ),
           
