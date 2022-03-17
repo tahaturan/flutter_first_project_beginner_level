@@ -34,7 +34,6 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Row(
         children: [
           Container(
-          
           margin: const EdgeInsets.all(10),
           width: 200,
           height: 200,
