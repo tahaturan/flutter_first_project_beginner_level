@@ -33,15 +33,21 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
+      body: Align(
+        alignment: Alignment.bottomLeft,
+        
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
+          
           children: [
             Container(
               width: 200,
               height: 200,
               color: Colors.red,
-              child:  Center(child: Text("merhaba")),
+              child: Align(
+                alignment: Alignment.topCenter,
+                child: Text("merhaba"),
+              ),
             ),
           ],
         ),
